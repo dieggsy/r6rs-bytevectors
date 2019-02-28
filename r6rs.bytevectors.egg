@@ -5,7 +5,7 @@
  (license "MIT")
  (component-options
   (csc-options "-O3"))
- (dependencies utf8 srfi-4)
+ (dependencies utf8 srfi-4 r7rs)
  (test-dependencies test srfi-1 utf8)
  (components
   (extension r6rs.bytevectors (source "r6rs.bytevectors.scm"))))

@@ -19,6 +19,11 @@
             (u8vector-length bytevector-length)
             (u8vector-ref bytevector-u8-ref)
             (u8vector-set! bytevector-u8-set!)))
+  (import (only r7rs
+                make-bytevector
+                bytevector-copy
+                string->utf8
+                utf8->string))
 
   (export
    endianness
@@ -68,7 +73,7 @@
   (define inexact exact->inexact)
 
   (include "bytevectors-impl.scm")
-  (include "r7rs-shim.scm")
+  (include "srfi-151-shim.scm")
   (include "chicken-ieee.scm")
 
 ) ; r6rs bytevectors
