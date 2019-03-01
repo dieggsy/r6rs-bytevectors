@@ -1,4 +1,6 @@
-((author "John Cowan")
+((author "William D Clinger"
+         "Felix Winkelmann"
+         "John Cowan")
  (maintainer "Diego Mundo")
  (synopsis "An implementation of r6rs bytevectors")
  (category data)
