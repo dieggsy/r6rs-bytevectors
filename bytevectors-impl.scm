@@ -227,7 +227,8 @@
         ((infinite? x)
          (values (if (positive? x) 0 1) (+ bias bias 1) 0))
         ((zero? x)
-         (values (if (eqv? x -0.0) 1 0) 0 0))
+         (values ;; (if (eqv? x -0.0) 1 0)
+          0 0 0))
         (else
          (let* ((sign (if (negative? x) 1 0))
                 (y (exact (abs x)))
