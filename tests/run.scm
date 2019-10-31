@@ -1158,3 +1158,4 @@
                                                       4)))))))
 
 (test-end "r6rs.bytevectors")
+(test-exit)
